@@ -523,8 +523,7 @@ margin-right: 10px;
     width: 44px;
     height: 44px;
 
-    transition: var(--transition-duration) var(--transition-timing-function);
-/* transition-property: background-color, fill; */
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
 
 }
 
@@ -532,6 +531,8 @@ margin-right: 10px;
     width: 20px;
     height: 20px;
     fill: var(--social-list-color);
+
+    transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .social-list a:hover,
@@ -564,12 +565,13 @@ margin-right: 10px;
     border: 1px solid var(--social-list-color);
     border-radius: 4px;
 
-    transition-property: border-color;
-    transition: var(--transition-duration) var(--transition-timing-function);
+    transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .client-logo .icon {
     fill: var(--social-list-color);
+
+    transition: fill var(--transition-duration) var(--transition-timing-function);
 
     }
 
@@ -577,8 +579,6 @@ a > .client-logo:hover,
 a > .client-logo:focus {
     border-color: var(--accent-color);
 
-    transition-property: fill;
-    transition: var(--transition-duration) var(--transition-timing-function);
    }
 
 .client-logo:hover .icon,
@@ -818,4 +818,5 @@ margin-right: 10px;
 
 .general-links .icon {
     fill: var(--primary-white-color);
-}
+
+    }
